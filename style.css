@@ -1,0 +1,170 @@
+.calc__place {
+  display: none;
+  position: absolute;
+  top: 20px;
+  flex-direction: column;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.input__place::placeholder {
+  color: black;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  background-color: grey;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: monospace;
+  transition: transform 0.1s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+#result {
+  display: flex;
+  align-items: center;
+
+  width: 280px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 500;
+  border: 1px solid black;
+  padding-left: 20px;
+}
+
+.reset__space {
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.hello {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  align-items: center;
+  position: relative;
+}
+
+.hellobtn {
+  height: 70px;
+  width: 300px;
+  background-color: rgb(41, 126, 222);
+  color: rgb(46, 45, 45);
+  border-radius: 4px;
+  top: 50;
+  left: 50;
+}
+
+.hellobtn:hover {
+  color: white;
+}
+
+
+.calc {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.number1 {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.number2 {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.number3 {
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+
+.number4 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.number5 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.number6 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.number7 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.number8 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.number9 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.number0 {
+  grid-column: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 5;
+  width: 148px;
+}
+
+.tochka {
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+
+
+.result__btn {
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 4;
+  height: 148px;
+}
+
+.math__plus {
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+
+.math__minus {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.math__multi {
+  grid-column-start: 4;
+  grid-row-start: 1;
+}
+
+.math__division {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.root {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.reset {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
